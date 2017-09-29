@@ -1,7 +1,7 @@
 @extends('layouts.master')
 
 @section('title')
-    TMSORAYA
+    Contact us
 @endsection
 
 @section('content')

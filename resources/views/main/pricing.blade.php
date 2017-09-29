@@ -1,7 +1,7 @@
 @extends('layouts.master', ['profile'=> true])
 
 @section('title')
-    TMSORAYA
+    Pricing
 @endsection
 
 @section('content')

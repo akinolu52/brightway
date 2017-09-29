@@ -1,7 +1,7 @@
 @extends('layouts.master', ['collections'=> true])
 
 @section('title')
-    TMSORAYA
+    Tracking
 @endsection
 
 @section('content')

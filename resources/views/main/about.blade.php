@@ -1,7 +1,7 @@
 @extends('layouts.master', ['collections'=> true])
 
 @section('title')
-    TMSORAYA
+    About us
 @endsection
 
 @section('content')
