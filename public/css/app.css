@@ -10632,6 +10632,7 @@ body[data-aos-easing=ease-in-out-quart] [data-aos] {
 }
 
 .pricing-panel {
+  margin: 1rem 0;
   background: #FFFFFF;
   color: #0D1519;
   border: 2px solid #b0b0b0;
@@ -10849,6 +10850,55 @@ body[data-aos-easing=ease-in-out-quart] [data-aos] {
 
 #home .testimonials .carousel {
   color: #FFFFFF;
+}
+
+.about-panel {
+  border: 1px solid #eaeaea;
+}
+
+.about-panel h1 {
+  padding-top: 1rem;
+}
+
+.about-panel p {
+  padding-top: 1rem;
+}
+
+#tracking {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  min-height: 65vh;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#tracking .tracker {
+  margin: 0 auto;
+}
+
+#tracking .tracker .tracker-header {
+  font-weight: 600;
+  font-size: 17px;
+  font-family: "Poppins", sans-serif;
+}
+
+#tracking .tracker input {
+  border-radius: 2px;
+  border: 1px solid #ededed;
+}
+
+#tracking .tracker button {
+  font-size: 13px;
+}
+
+#tracking .tracker .tracker-item {
+  -webkit-box-shadow: -1px 1px 20px rgba(0, 0, 0, 0.12);
+          box-shadow: -1px 1px 20px rgba(0, 0, 0, 0.12);
 }
 
 .footer {

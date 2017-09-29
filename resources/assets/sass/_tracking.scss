@@ -1,0 +1,29 @@
+#tracking{
+  display: flex;
+  min-height: 65vh;
+  justify-content: center;
+  align-items: center;
+
+  .tracker{
+    margin: 0 auto;
+    .tracker-header{
+      font-weight: 600;
+      font-size: 17px;
+      font-family: $font-family-poppins;
+    }
+    input{
+      border-radius: 2px;
+      border: 1px solid #ededed;
+    }
+
+    button{
+      font-size: $def-font-size;
+    }
+
+    .tracker-item{
+      box-shadow: -1px 1px 20px rgba(0, 0, 0, 0.12);
+    }
+
+  }
+
+}
