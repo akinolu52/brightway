@@ -1,4 +1,4 @@
-@extends('layouts.master', ['collections'=> true])
+@extends('layouts.master')
 
 @section('title')
     About us
@@ -43,15 +43,30 @@
                 </div>
             </div>
 
-            <div class="row">
+            <div class="row pt-4">
                 <div class="col-md-4">
-
+                    <div class="about-panel p-3">
+                        <h1 class="semi-loud-text">WHAT WE DO</h1>
+                        <p class="milder-text">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip. quis nostrud.
+                        </p>
+                    </div>
                 </div>
                 <div class="col-md-4">
-
+                    <div class="about-panel p-3">
+                        <h1 class="semi-loud-text">WHAT WE DO</h1>
+                        <p class="milder-text">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip. quis nostrud.
+                        </p>
+                    </div>
                 </div>
                 <div class="col-md-4">
-
+                    <div class="about-panel p-3">
+                        <h1 class="semi-loud-text">WHAT WE DO</h1>
+                        <p class="milder-text">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip. quis nostrud.
+                        </p>
+                    </div>
                 </div>
             </div>
         </div>

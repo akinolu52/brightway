@@ -1,4 +1,8 @@
-@extends('layouts.master') @section('title') BrightWay Delivery @endsection @section('content')
+@extends('layouts.master')
+@section('title')
+    BrightWay Delivery
+@endsection
+@section('content')
 <section id="home">
     <div class="jumbotron hero-section">
         <div class="dark-overlay"></div>
