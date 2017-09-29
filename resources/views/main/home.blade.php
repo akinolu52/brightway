@@ -27,7 +27,7 @@
         </form>
     </div>
 
-    <div class="about p-5">
+    <div class="about py-5">
         <div class="container">
             <div class="row">
                 <div class="col-md-5">
@@ -65,6 +65,9 @@
             </div>
         </div>
     </div>
+
+    <hr>
+
     <div class="calculate">
         <div class="container">
             <div class="row">
@@ -106,7 +109,7 @@
                             </div>
                         </div>
                         <div class="row justify-content-end">
-                            <div class="col-sm-9">
+                            <div class="col-sm-9 mb-3">
                                 <button class="btn btn-def btn-block">Calculate cost</button>
                             </div>
                         </div>
@@ -120,8 +123,8 @@
     <div class="services">
         <div class="dark-overlay"></div>
         <div class="row w-100 m-0 no-gutters">
-            <div class="col-md-9 col-6 d-flex justify-content-center align-items-center">
-                <div class="container-fluid p-5">
+            <div class="col-md-9 d-flex justify-content-center align-items-center">
+                <div class="container py-5">
                     <div class="row">
                         <div class="col-md-4">
                             <div class="service-box">
@@ -154,7 +157,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col-md-3 col-6">
+            <div class="col-md-3">
                 <img src="/img/step-img.png" data-aos="slide-left" class="img-fluid w-100" alt="">
             </div>
         </div>
@@ -162,7 +165,7 @@
     <div class="delivery">
 
     </div>
-    <div class="testimonials p-5">
+    <div class="testimonials py-5">
         <div id="testimonialCarousel" class="carousel slide" data-ride="carousel">
             <div class="carousel-inner">
                 <div class="carousel-item active">
@@ -212,7 +215,7 @@
                     </a>
         </div>
     </div>
-    <div class="pricing p-5">
+    <div class="pricing py-5">
         <div class="container">
             <div class="header text-center">
                 <h3 class="loud-text">PRICING & PLAN</h3>
@@ -328,7 +331,7 @@
             </div>
         </div>
     </div>
-    <div class="contact p-5">
+    <div class="contact py-5">
         <div class="container">
             <div class="row">
                 <div class="col-md-5">

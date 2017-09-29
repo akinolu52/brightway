@@ -5,14 +5,14 @@
                 logo here
             </div>
             <div class="col-md-3">
-                <h3>QUICK LINKS</h3>
+                <h5>QUICK LINKS</h5>
             </div>
             <div class="col-md-3">
-                <h3>IMPORTANT LINKS</h3>
+                <h5>IMPORTANT LINKS</h5>
 
             </div>
             <div class="col-md-3">
-                <h3>GET IN TOUCH</h3>
+                <h5>GET IN TOUCH</h5>
 
             </div>
         </div>
