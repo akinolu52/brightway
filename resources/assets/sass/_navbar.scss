@@ -1,0 +1,29 @@
+.sub-menu{
+  background: $dark-bg-color;
+  color: $white-color;
+}
+.navbar{
+    background: $light-bg-color;
+
+  .navbar-brand{
+    img{
+      width:60px;
+      height:auto;
+    }
+  }
+  .nav-item{
+    padding: 0 1rem;
+
+    .nav-link{
+      font-family: $font-family-poppins;
+      font-size: $def-font-size;
+      color: $dark-color;
+      font-weight: 600;
+      letter-spacing: 1px;
+
+      &:hover{
+        color: $primary-color;
+      }
+    }
+  }
+}
