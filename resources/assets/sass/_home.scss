@@ -8,6 +8,15 @@
     color: white;
     text-align: center;
     border-bottom: 5px solid $primary-color;
+
+    .hero-header{
+      z-index: 999;
+      *{
+        color: $white-color;
+        font-size: 48px;
+        font-family: $font-family-poppins;
+      }
+    }
   }
 
   .tracker{

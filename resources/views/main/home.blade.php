@@ -4,11 +4,16 @@
 @endsection
 @section('content')
 <section id="home">
-    <div class="jumbotron hero-section">
+    <div class="jumbotron hero-section d-flex justify-content-center align-items-center">
         <div class="dark-overlay"></div>
-        <h1>
-            AWESOME TEMPLATE FOR COURIER & DELIVERY SERVICES
-        </h1>
+        <div class="hero-header" data-aos="fade-in" data-aos-delay="400" data-aos-duration="500" data-aos-once="true">
+            <h1>
+                AWESOME TEMPLATE FOR COURIER
+            </h1>
+            <h1>
+                & DELIVERY SERVICES
+            </h1>
+        </div>
     </div>
     <div class="card tracker p-4">
         <h5 class="tracker-header mb-1">TRACK YOUR PRODUCT <span class="mild-text ml-2">now you can track your product easily</span></h5>
@@ -60,7 +65,7 @@
 
                 </div>
                 <div class="col-md-7">
-                    <img src="/img/about-img.png" data-aos="slide-left" class="img-fluid" alt="">
+                    <img src="/img/about-img.png" data-aos="slide-left" class="img-fluid" alt="Delivery bus" data-aos-delay="200" data-aos-once="true">
                 </div>
             </div>
         </div>
@@ -72,7 +77,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-6">
-                    <img src="/img/calculate.png" class="img-fluid" data-aos="slide-right" alt="">
+                    <img src="/img/calculate.png" class="img-fluid" data-aos="slide-right" alt="Delivery person" data-aos-delay="200" data-aos-once="true">
                 </div>
                 <div class="col-md-5">
                     <h1 class="loud-text">CALCULATE YOUR COST</h1>
@@ -113,7 +118,6 @@
                                 <button class="btn btn-def btn-block">Calculate cost</button>
                             </div>
                         </div>
-
                     </form>
                 </div>
             </div>
@@ -158,7 +162,7 @@
                 </div>
             </div>
             <div class="col-md-3">
-                <img src="/img/step-img.png" data-aos="slide-left" class="img-fluid w-100" alt="">
+                <img src="/img/step-img.png" data-aos="slide-left" class="img-fluid w-100" alt="Delivery bus" data-aos-delay="500" data-aos-once="true">
             </div>
         </div>
     </div>
@@ -337,23 +341,67 @@
                 <div class="col-md-5">
                     <h1>CONTACT US</h1>
                     <p>get in touch with us easily</p>
-                    <div class="row">
-                        <div class="col-6">
-                            NUMBERS:
+                    <div class="contact-cont py-5">
+                        <div class="row d-flex align-items-center">
+                            <div class="col-6">
+                                <h4 class="semi-loud-text">
+                                    NUMBERS:
+                                </h4>
+                            </div>
+                            <div class="col-6">
+                                <p>
+                                    <a href="tel:" class="milder-text">08081</a>
+                                </p>
+                                <p>
+                                    <a href="tel:" class="milder-text">08081</a>
+                                </p>
+                            </div>
                         </div>
-                        <div class="col-6">
-                            /0/040840
-                        </div>
-                        <div class="col-6">
-                            EMAIL ADDRESS:
-                        </div>
-                        <div class="col-6">
-                            test@test.com
+                        <div class="row d-flex align-items-center">
+                            <div class="col-6">
+                                <h4 class="semi-loud-text">
+                                    Email address:
+                                </h4>
+                            </div>
+                            <div class="col-6">
+                                <p>
+                                    <a href="" class="milder-text">test@test.com</a>
+                                </p>
+                            </div>
                         </div>
                     </div>
+                </div>
+                <div class="col-md-7">
+                    <div id="map"></div>
                 </div>
             </div>
         </div>
     </div>
+
+    <a href="#app" class="fbtt">
+        <span class="fa fa-arrow-up"></span>
+    </a>
 </section>
+@endsection
+
+
+
+@section('scripts')
+
+    <script>
+        function initMap() {
+            var uluru = {lat: -25.363, lng: 131.044};
+            var map = new google.maps.Map(document.getElementById('map'), {
+                zoom: 4,
+                center: uluru
+            });
+            var marker = new google.maps.Marker({
+                position: uluru,
+                map: map
+            });
+        }
+    </script>
+    <script async defer
+            src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAWwVZp-9zVTfng0X1x2tbUqvBNnd0iPxM&callback=initMap">
+    </script>
 @endsection
