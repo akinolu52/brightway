@@ -1,4 +1,54 @@
 .footer{
   background: $dark-bg-color;
   color: $white-color;
+
+
+  .footer-brand {
+    img {
+      width: 100px;
+      height: auto;
+    }
+  }
+
+  .nav{
+    .nav-item{
+      padding: 0.25rem 0;
+      a{
+        color: $white-color;
+        text-decoration: none;
+      }
+    }
+  }
+
+  .social-links{
+    .social-link{
+      width: 36px;
+      font-size: 16px;
+      line-height: 32px;
+      display: inline-flex;
+      justify-content: center;
+      align-items: center;
+      border: 3px solid $ash-color;
+      color: $ash-color;
+      text-decoration: none;
+      padding: 0.5rem;
+      border-radius: 100%;
+      margin: 0 0.25rem;
+      transition: 0.3s;
+
+
+
+
+      &:hover{
+        background: $primary-color;
+        border: 3px solid $primary-color;
+        color: $white-color;
+      }
+    }
+  }
+
+
+  .footer-bottom{
+    background: $black-color;
+  }
 }

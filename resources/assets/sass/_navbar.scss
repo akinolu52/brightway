@@ -1,13 +1,18 @@
 .sub-menu{
   background: $dark-bg-color;
   color: $white-color;
+
+  .number-link{
+    color: $primary-color;
+    text-decoration: none;
+  }
 }
 .navbar{
     background: $light-bg-color;
 
   .navbar-brand{
     img{
-      width:60px;
+      width:70px;
       height:auto;
     }
   }
