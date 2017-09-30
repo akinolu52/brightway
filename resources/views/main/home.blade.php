@@ -128,7 +128,7 @@
         <div class="dark-overlay"></div>
         <div class="row w-100 m-0 no-gutters">
             <div class="col-md-9 d-flex justify-content-center align-items-center">
-                <div class="container py-5">
+                <div class="container py-5" data-aos="slide-right" data-aos-delay="500" data-aos-once="true">
                     <div class="row">
                         <div class="col-md-4">
                             <div class="service-box">
