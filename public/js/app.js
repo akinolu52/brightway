@@ -756,6 +756,8 @@ module.exports = __webpack_require__(35);
 __webpack_require__(9);
 
 jQuery(document).ready(function () {
+    jQuery(".loader_overlay").css("display", "none");
+
     var offset = 250;
     var duration = 500;
     jQuery(window).scroll(function () {
@@ -765,8 +767,8 @@ jQuery(document).ready(function () {
             jQuery('.fbtt').fadeOut(duration);
         }
     });
-    jQuery('.fbtt').click(function (event) {
-        event.preventDefault();
+    jQuery('.fbtt').click(function (e) {
+        e.preventDefault();
         jQuery('html, body').animate({ scrollTop: 0 }, duration);
         return false;
     });
