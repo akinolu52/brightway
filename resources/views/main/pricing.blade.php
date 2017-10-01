@@ -14,7 +14,7 @@
 
             <div class="row">
                 <div class="col-md-4">
-                    <div class="pricing-panel p-4 text-center" data-aos="slide-up" data-aos-delay="100" data-aos-duration="500">
+                    <div class="pricing-panel p-4 text-center" data-aos="slide-up" data-aos-delay="100" data-aos-duration="500" data-aos-once="true">
                         <div class="pricing-price">
                             $150
                         </div>
@@ -49,7 +49,7 @@
                     </div>
                 </div>
                 <div class="col-md-4">
-                    <div class="pricing-panel active p-4 text-center" data-aos="slide-up" data-aos-delay="200" data-aos-duration="500">
+                    <div class="pricing-panel active p-4 text-center" data-aos="slide-up" data-aos-delay="200" data-aos-duration="500" data-aos-once="true">
                         <div class="pricing-price">
                             $150
                         </div>
@@ -84,7 +84,7 @@
                     </div>
                 </div>
                 <div class="col-md-4">
-                    <div class="pricing-panel p-4 text-center" data-aos="slide-up" data-aos-delay="300" data-aos-duration="500">
+                    <div class="pricing-panel p-4 text-center" data-aos="slide-up" data-aos-delay="300" data-aos-duration="500" data-aos-once="true">
                         <div class="pricing-price">
                             $150
                         </div>
@@ -119,7 +119,7 @@
                     </div>
                 </div>
                 <div class="col-md-4">
-                    <div class="pricing-panel p-4 text-center" data-aos="slide-up" data-aos-delay="400" data-aos-duration="500">
+                    <div class="pricing-panel p-4 text-center" data-aos="slide-up" data-aos-delay="400" data-aos-duration="500" data-aos-once="true">
                         <div class="pricing-price">
                             $150
                         </div>
@@ -154,7 +154,7 @@
                     </div>
                 </div>
                 <div class="col-md-4">
-                    <div class="pricing-panel p-4 text-center" data-aos="slide-up" data-aos-delay="500" data-aos-duration="500">
+                    <div class="pricing-panel p-4 text-center" data-aos="slide-up" data-aos-delay="500" data-aos-duration="500" data-aos-once="true">
                         <div class="pricing-price">
                             $150
                         </div>
@@ -189,7 +189,7 @@
                     </div>
                 </div>
                 <div class="col-md-4">
-                    <div class="pricing-panel p-4 text-center" data-aos="slide-up" data-aos-delay="600" data-aos-duration="500">
+                    <div class="pricing-panel p-4 text-center" data-aos="slide-up" data-aos-delay="600" data-aos-duration="500" data-aos-once="true">
                         <div class="pricing-price">
                             $150
                         </div>

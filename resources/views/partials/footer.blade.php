@@ -68,12 +68,12 @@
     <div class="footer-bottom w-100">
         <div class="container">
             <div class="row m-0 py-3 no-gutters">
-                <div class="col-6">
+                <div class="col-md-6">
                     <p class="m-0 milder-text">
                         Copyright 2016, all right reserved.
                     </p>
                 </div>
-                <div class="col-6 d-flex justify-content-end">
+                <div class="col-md-6 d-flex justify-content-end">
                     <p class="m-0 milder-text">
                         designed with <span class="fa fa-heart"></span> by Casper
                     </p>
