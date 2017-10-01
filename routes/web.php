@@ -31,3 +31,14 @@ Route::get('/contact', function () {
     return view('main.contact');
 });
 
+Route::get('/login', function () {
+    return view('main.login');
+});
+
+Route::get('/register', function () {
+    return view('main.register');
+});
+
+Route::get('/reset-password', function () {
+    return view('main.resetpassword');
+});

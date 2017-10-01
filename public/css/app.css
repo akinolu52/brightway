@@ -10848,6 +10848,14 @@ body[data-aos-easing=ease-in-out-quart] [data-aos] {
   color: #0098DB;
 }
 
+.modal-content {
+  margin-top: 22vh;
+}
+
+.bg-dark {
+  background: #252525;
+}
+
 #home .hero-section {
   position: relative;
   background: url("/img/bg2.jpg") no-repeat fixed;

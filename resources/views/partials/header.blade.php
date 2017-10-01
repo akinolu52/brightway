@@ -1,7 +1,7 @@
 <div class="row sub-menu w-100 m-0">
     <div class="col-12 d-flex justify-content-end align-items-center p-0">
         <p class="d-inline-block m-0 pr-4"><span class="fa fa-phone"></span> Call us now <a href="" class="number-link">808</a></p>
-        <a class="btn btn-def px-4 text-uppercase">sign in</a>
+        <button type="button" class="btn btn-def px-4 text-uppercase" data-toggle="modal" data-target="#signInModal">sign in</button>
     </div>
 </div>
 
@@ -37,3 +37,45 @@
     </div>
 </div>
 </nav>
+
+
+
+<div class="modal fade" id="signInModal" tabindex="-1" role="dialog" aria-labelledby="signInModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-body">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+                <div class="container">
+                    <h1 class="loud-text text-center">SIGN IN</h1>
+                    <p class="mild-text text-center">Sign in to Go for getting all details</p>
+                    <div class="row">
+                        <form class="w-100" action="">
+                            <div class="col-12 my-2">
+                                <input type="email" class="form-control form-control-nbr" placeholder="Email Address">
+                            </div>
+                            <div class="col-12 my-2">
+                                <input type="password" class="form-control form-control-nbr" placeholder="********">
+                            </div>
+                            <div class="col-12 my-2 text-center">
+                                <button class="btn btn-def btn-block">SIGN IN NOW</button>
+                                <a href="/reset-password" class="milder-text">Forgot Password?</a>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer bg-dark p-2 text-center">
+                <div class="row">
+                    <div class="col-12">
+                        <p class="mild-text m-0">Do not have an account?</p>
+                    </div>
+                    <div class="col-12">
+                        <a href="/register">CREATE A FREE ACCOUNT</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
