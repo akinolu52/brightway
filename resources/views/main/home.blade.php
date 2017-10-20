@@ -1,3 +1,4 @@
+
 @extends('layouts.master')
 @section('title')
     BrightWay Delivery
@@ -8,30 +9,31 @@
         <div class="dark-overlay"></div>
         <div class="hero-header" data-aos="fade-in" data-aos-delay="400" data-aos-duration="500" data-aos-once="true">
             <h1>
-                AWESOME TEMPLATE FOR COURIER
+                WELCOME TO 
             </h1>
             <h1>
-                & DELIVERY SERVICES
+                BRIGHTWAY DELIVERY SERVICES
             </h1>
         </div>
     </div>
     <div class="card tracker p-4">
-        <h5 class="tracker-header mb-1">TRACK YOUR PRODUCT <span class="mild-text ml-2">now you can track your product easily</span></h5>
-        <form action="">
+        <h5 class="tracker-header mb-1 text-center">TRACK YOUR PRODUCT <span class="mild-text ml-2">now you can track your product easily</span></h5>
+        <form action="{{ url('/track') }}" method="post">
+             {{ csrf_field() }}
             <div class="row w-100 m-0 no-gutters">
-                <div class="col-md-4 px-1 my-1">
-                    <input class="form-control tracker-item" type="text" placeholder="Order id">
+                <div class="col-md-12 px-1 my-1">
+                    <input class="form-control tracker-item" type="number" placeholder="Order id" name="trackid">
                 </div>
-                <div class="col-md-4 px-1 my-1">
-                    <input class="form-control tracker-item" type="text" placeholder="Email">
-                </div>
-                <div class="col-md-4 px-1 my-1">
+                <div class="col-md-4 px-1 my-1 align-self-center">
                     <button class="btn btn-def btn-block tracker-item">TRACK YOUR PRODUCT</button>
                 </div>
             </div>
+      @isset($status)
+       {{$status}}
+      @endisset            
         </form>
     </div>
-
+     
     <div class="about py-5">
         <div class="container">
             <div class="row">
@@ -73,6 +75,13 @@
 
     <hr>
 
+    <?php 
+   $locations = array( 'Lagos Island', 'Ikoyi', 'Obalende', 'Dolphin Estate', 'Osborne Park View', 'Victoria Island', 'Banana Island', 'Marina', 'Oniru', 'Lekki Phase 1' , '3rd Roundabout', 'Osapa London', 'Alpha Beach', 'Chisco', 'Agungi Femi', 'Chevron', 'VGC', 'Ajah', 'Lekki Phase 2', 'Abraham Adesanya', 'Badore' , 'Apapa', 'Ijora', 'Iganmu', 'Costain', 'Ojuelegba', 'Surulere', 'Mushin', 'Shomolu', 'Yaba', 'Onipanu', 'Palmgrove', 'Obanikoro', 'Iyanaoworo', 'Bariga' , 'Anthony', 'Gbagada', 'Ajao Estate', 'Mushin', 'Isolo', 'Oshodi', 'Olodi-Apapa', 'MMA1', 'Mm2', 'Maryland', 'Ikeja' , 'Ojota', 'Ketu', 'Mile 12', 'Magodo-Shangisha', 'Alausa', 'Omole Phase 1', 'Omole Phase 2', 'Magodo Phase 1', 'Ojodu Berger', 'Ogba', 'Iju-Ishaga', 'Agege', 'Orile-Agege', 'Abule-Egba', 'Egbeda', 'Ikotun', 'Idimu', 'Igando', 'Ipaja', 'Gowon Estate', 'Igando', 'Ifako', 'Alimosho' , 'Mile 2', 'Amuwo-Odofin', 'Festac', 'Satelite Town', 'Navy Town', 'Alaba', 'LASU', 'Okomaiko', 'Volkswagen', 'Trade-Fair', 'Ojo', 'Iba');
+   
+     
+    ?>
+    
+   
     <div class="calculate">
         <div class="container">
             <div class="row">
@@ -80,45 +89,81 @@
                     <img src="/img/calculate.png" class="img-fluid" data-aos="slide-right" alt="Delivery person" data-aos-delay="200" data-aos-once="true">
                 </div>
                 <div class="col-md-5">
-                    <h1 class="loud-text">CALCULATE YOUR COST</h1>
-                    <p class="milder-text">lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore.</p>
-                    <form action="">
-                        <div class="form-group row align-items-center">
-                            <label for="" class="col-sm-3 semi-loud-text m-0">some</label>
-                            <div class="col-sm-9">
-                                <input type="text" class="form-control form-control-nbr" id="">
+                    <h1 class="loud-text">DELIVER YOUR ITEM</h1>
+                    <h3 class="milder-text red">ITEMS MUST NOT BE MORE THAN 30KG</h3>
+                    <h3 class="milder-text red">ITEMS ABOVE 30KG INCURE EXTRA CHARGES</h3>
+                    
+
+                @if(!isset($message))
+                    <form action="{{ url('/user') }}" method="post">
+                       {{ csrf_field() }}
+                        <div class="form-group align-items-center">
+                            <div class="">
+                                <input type="text" class="form-control form-control-nbr" id="" name="firstname" placeholder="First Name">
                             </div>
                         </div>
-                        <div class="form-group row align-items-center">
-                            <label for="" class="col-sm-3 semi-loud-text m-0">some</label>
-                            <div class="col-sm-9">
-                                <input type="text" class="form-control form-control-nbr" id="">
+                        <div class="form-group align-items-center">
+                            <label for="" class=" semi-loud-text m-0">Last Name</label>
+                            <div class="">
+                                <input type="text" class="form-control form-control-nbr" id="" name="lastname">
                             </div>
                         </div>
-                        <div class="form-group row align-items-center">
-                            <label for="" class="col-sm-3 semi-loud-text m-0">some</label>
-                            <div class="col-sm-9">
-                                <input type="text" class="form-control form-control-nbr" id="">
+                        <div class="form-group align-items-center">
+                            <label for="" class=" semi-loud-text m-0">Email</label>
+                            <div class="">
+                                <input type="email" class="form-control form-control-nbr" id="" name="email">
                             </div>
                         </div>
-                        <div class="form-group row align-items-center">
-                            <label for="" class="col-sm-3 semi-loud-text m-0">some</label>
-                            <div class="col-sm-9">
-                                <input type="text" class="form-control form-control-nbr" id="">
+                        <div class="form-group align-items-center">
+                            <div class="">
+                                <input type="number" class="form-control form-control-nbr" id="" name="number" placeholder="Phone Number">
                             </div>
                         </div>
-                        <div class="form-group row align-items-center">
-                            <label for="" class="col-sm-3 semi-loud-text m-0">some</label>
-                            <div class="col-sm-9">
-                                <select name="" class="form-control form-control-nbr" id=""></select>
+                        <div class="form-group align-items-center">
+                            <label for="" class=" semi-loud-text m-0">Number of Items</label>
+                            <div class="">
+                                <input type="number" class="form-control form-control-nbr" id="" name="quantity">
                             </div>
                         </div>
-                        <div class="row justify-content-end">
-                            <div class="col-sm-9 mb-3">
-                                <button class="btn btn-def btn-block">Calculate cost</button>
+                        <div class="form-group align-items-center">
+                            <div class="">
+                                <select name= "from" required >
+                                    @for ($i = 0; $i < count($locations); $i++)
+                                         <option value = "{{ $locations[$i]}} "> {{ $locations[$i] }} </option> 
+                                    @endfor
+                                </select>
                             </div>
                         </div>
+                        <div class="form-group align-items-center">
+                            <div class="">
+                                <input type="text" class="form-control form-control-nbr" id="" name="from_address" placeholder="From Address" required>
+                            </div>
+                        </div>
+                        <div class="form-group align-items-center">
+                            <div class="">
+                                <select name= "to" required >
+                                    @for ($i = 0; $i < count($locations); $i++)
+                                        <option value = "{{ $locations[$i]}} "> {{ $locations[$i] }} </option> 
+                                    @endfor
+                                </select>
+                            </div>
+                        </div>
+                        <div class="form-group align-items-center">
+                            <div class="">
+                                <input type="text" class="form-control form-control-nbr" id="" name="to_address" placeholder="To Address" required>
+                            </div>
+                        </div>
+                        <div class="form-group align-items-center">
+                            <div class="">
+                                <input type="submit" class="form-control form-control-nbr" id="" value="Deliver">
+                            </div>
+                        </div>
+                        
                     </form>
+                    @else
+                      {{$message }}
+                    @endif
+                                     
                 </div>
             </div>
         </div>
@@ -219,122 +264,7 @@
                     </a>
         </div>
     </div>
-    <div class="pricing py-5">
-        <div class="container">
-            <div class="header text-center">
-                <h3 class="loud-text">PRICING & PLAN</h3>
-                <p class="mild-text">see our pricing & plan to get the best services</p>
-            </div>
-
-            <div class="row">
-                <div class="col-md-4">
-                    <div class="pricing-panel p-4 text-center">
-                        <div class="pricing-price">
-                            $150
-                        </div>
-                        <div class="pricing-desc">
-                            for multiple products
-                        </div>
-                        <div class="pricing-header">
-                            standard
-                        </div>
-                        <div class="pricing-description">
-                            <h4 class="pricing-title">
-                                PRODUCT WEIGHT:
-                                <span>< 3KG</span>
-                            </h4>
-                            <h4 class="pricing-title">
-                                PRODUCT WEIGHT:
-                                <span>< 3KG</span>
-                            </h4>
-                            <h4 class="pricing-title">
-                                PRODUCT WEIGHT:
-                                <span>< 3KG</span>
-                            </h4>
-                            <h4 class="pricing-title">
-                                PRODUCT WEIGHT:
-                                <span>< 3KG</span>
-                            </h4>
-
-                        </div>
-                        <div class="pricing-footer">
-                            <a href="">ORDER NOW <span class="fa fa-arrow-right"></span></a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="pricing-panel active p-4 text-center">
-                        <div class="pricing-price">
-                            $150
-                        </div>
-                        <div class="pricing-desc">
-                            for multiple products
-                        </div>
-                        <div class="pricing-header">
-                            standard
-                        </div>
-                        <div class="pricing-description">
-                            <h4 class="pricing-title">
-                                PRODUCT WEIGHT:
-                                <span>< 3KG</span>
-                            </h4>
-                            <h4 class="pricing-title">
-                                PRODUCT WEIGHT:
-                                <span>< 3KG</span>
-                            </h4>
-                            <h4 class="pricing-title">
-                                PRODUCT WEIGHT:
-                                <span>< 3KG</span>
-                            </h4>
-                            <h4 class="pricing-title">
-                                PRODUCT WEIGHT:
-                                <span>< 3KG</span>
-                            </h4>
-
-                        </div>
-                        <div class="pricing-footer">
-                            <a href="">ORDER NOW <span class="fa fa-arrow-right"></span></a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="pricing-panel p-4 text-center">
-                        <div class="pricing-price">
-                            $150
-                        </div>
-                        <div class="pricing-desc">
-                            for multiple products
-                        </div>
-                        <div class="pricing-header">
-                            standard
-                        </div>
-                        <div class="pricing-description">
-                            <h4 class="pricing-title">
-                                PRODUCT WEIGHT:
-                                <span>< 3KG</span>
-                            </h4>
-                            <h4 class="pricing-title">
-                                PRODUCT WEIGHT:
-                                <span>< 3KG</span>
-                            </h4>
-                            <h4 class="pricing-title">
-                                PRODUCT WEIGHT:
-                                <span>< 3KG</span>
-                            </h4>
-                            <h4 class="pricing-title">
-                                PRODUCT WEIGHT:
-                                <span>< 3KG</span>
-                            </h4>
-
-                        </div>
-                        <div class="pricing-footer">
-                            <a href="">ORDER NOW <span class="fa fa-arrow-right"></span></a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
+    
     <div class="contact py-5">
         <div class="container">
             <div class="row">
@@ -345,15 +275,30 @@
                         <div class="row d-flex align-items-center">
                             <div class="col-6">
                                 <h4 class="semi-loud-text">
-                                    NUMBERS:
+                                    ADDRESS:
                                 </h4>
                             </div>
                             <div class="col-6">
                                 <p>
+                                    <a href="tel:" class="milder-text">No 10 Olanrewaju street by community rd bus stop ago , okota Lagos.</a>
+                                </p>
+                                {{--  <p>
                                     <a href="tel:" class="milder-text">08081</a>
+                                </p>  --}}
+                            </div>  
+                        </div>
+                         <div class="row d-flex align-items-center">
+                            <div class="col-6">
+                                <h4 class="semi-loud-text">
+                                    Numbers:
+                                </h4>
+                            </div>
+                            <div class="col-6">
+                                <p>
+                                    <a href="tel:" class="milder-text">0811 281 8373</a>
                                 </p>
                                 <p>
-                                    <a href="tel:" class="milder-text">08081</a>
+                                    <a href="tel:" class="milder-text">09025417206.</a>
                                 </p>
                             </div>
                         </div>
@@ -365,7 +310,7 @@
                             </div>
                             <div class="col-6">
                                 <p>
-                                    <a href="" class="milder-text">test@test.com</a>
+                                    <a href="" class="milder-text">Brightwaydelivery@gmail.com</a>
                                 </p>
                             </div>
                         </div>

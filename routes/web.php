@@ -1,5 +1,6 @@
 <?php
-
+use Illuminate\Http\Request;
+use App\User;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -35,10 +36,23 @@ Route::get('/login', function () {
     return view('main.login');
 });
 
-Route::get('/register', function () {
-    return view('main.register');
-});
+Route::post('/signIn', 'AdminController@signIn');
 
-Route::get('/reset-password', function () {
-    return view('main.resetpassword');
+Route::post('/user' , 'UserController@user');
+
+Route::post('/track' , 'UserController@track');
+
+Route::post('/register', 'AdminController@signUp');
+
+Route::get('/admin', 'AdminController@index');
+ 
+
+
+Route::group(['middleware'=>'auth'], function(){
+
+    Route::get('/admin', 'AdminController@index'); 
+    
+    Route::get('/admin/edit/{id}', 'AdminController@edit');
+
+
 });

@@ -75,7 +75,7 @@
                 </div>
                 <div class="col-md-6 d-flex justify-content-end">
                     <p class="m-0 milder-text">
-                        designed with <span class="fa fa-heart"></span> by Casper
+                        designed with <span class="fa fa-heart"></span> by <a href="mailto:remilekun.salami@gmail.com">Casper</a> & <a href="mailto:joshuaoluikpe@gmail.com">Dagenius</a>
                     </p>
                 </div>
             </div>

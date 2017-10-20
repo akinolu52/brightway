@@ -10901,6 +10901,7 @@ body[data-aos-easing=ease-in-out-quart] [data-aos] {
 
 .navbar {
   background: #FFFFFF;
+  border-bottom:1px solid royalblue;
 }
 
 .navbar .navbar-brand img {
@@ -11118,3 +11119,7 @@ p {
   font-family: "Poppins", sans-serif;
 }
 
+.red{
+  color:red;
+  font-weight: bold;
+}
