@@ -13,15 +13,27 @@
                     <div class="row d-flex align-items-center">
                         <div class="col-6">
                             <h4 class="semi-loud-text">
-                                NUMBERS:
+                                ADDRESS:
+                            </h4>
+                        </div>
+                        <div class="col-6">
+                            <p class="milder-text">
+                                No 10 Olanrewaju street by community rd bus stop ago , okota Lagos.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="row d-flex align-items-center">
+                        <div class="col-6">
+                            <h4 class="semi-loud-text">
+                                Numbers:
                             </h4>
                         </div>
                         <div class="col-6">
                             <p>
-                                <a href="tel:" class="milder-text">08081</a>
+                                <a href="tel:+2348112818373" class="milder-text">0811 281 8373</a>
                             </p>
                             <p>
-                                <a href="tel:" class="milder-text">08081</a>
+                                <a href="tel:+2349025417206" class="milder-text">0902 541 7206</a>
                             </p>
                         </div>
                     </div>
@@ -33,7 +45,7 @@
                         </div>
                         <div class="col-6">
                             <p>
-                                <a href="" class="milder-text">test@test.com</a>
+                                <a href="mailto:brightwaydelivery@gmail.com" class="milder-text">brightwaydelivery@gmail.com</a>
                             </p>
                         </div>
                     </div>
@@ -41,27 +53,27 @@
                 <div class="col-md-6">
                     <form action="">
                         <div class="form-group row align-items-center">
-                            <label for="" class="col-sm-3 semi-loud-text m-0">some</label>
+                            <label for="" class="col-sm-3 semi-loud-text m-0">Name</label>
+                            <div class="col-sm-9">
+                                <input type="text" class="form-control form-control-nbr" id="" required>
+                            </div>
+                        </div>
+                        <div class="form-group row align-items-center">
+                            <label for="" class="col-sm-3 semi-loud-text m-0">Email</label>
+                            <div class="col-sm-9">
+                                <input type="email" class="form-control form-control-nbr" id="" required>
+                            </div>
+                        </div>
+                        <div class="form-group row align-items-center">
+                            <label for="" class="col-sm-3 semi-loud-text m-0">Subject</label>
                             <div class="col-sm-9">
                                 <input type="text" class="form-control form-control-nbr" id="">
                             </div>
                         </div>
-                        <div class="form-group row align-items-center">
-                            <label for="" class="col-sm-3 semi-loud-text m-0">some</label>
+                        <div class="form-group row">
+                            <label for="" class="col-sm-3 semi-loud-text m-0">Message</label>
                             <div class="col-sm-9">
-                                <input type="text" class="form-control form-control-nbr" id="">
-                            </div>
-                        </div>
-                        <div class="form-group row align-items-center">
-                            <label for="" class="col-sm-3 semi-loud-text m-0">some</label>
-                            <div class="col-sm-9">
-                                <input type="text" class="form-control form-control-nbr" id="">
-                            </div>
-                        </div>
-                        <div class="form-group row align-items-center">
-                            <label for="" class="col-sm-3 semi-loud-text m-0">some</label>
-                            <div class="col-sm-9">
-                                <input type="text" class="form-control form-control-nbr" id="">
+                                <textarea name="" id="" cols="30" rows="10" class="form-control form-control-nbr" required></textarea>
                             </div>
                         </div>
                         <div class="row justify-content-end">
@@ -81,9 +93,9 @@
 
     <script>
         function initMap() {
-            var uluru = {lat: -25.363, lng: 131.044};
+            var uluru = {lat: 6.5532415, lng: 3.2649028};
             var map = new google.maps.Map(document.getElementById('map'), {
-                zoom: 4,
+                zoom: 16,
                 center: uluru
             });
             var marker = new google.maps.Marker({

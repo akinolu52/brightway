@@ -44,7 +44,7 @@ Route::post('/track' , 'UserController@track');
 
 Route::post('/register', 'AdminController@signUp');
 
-Route::get('/admin', 'AdminController@index');
+//Route::get('/admin', 'AdminController@index');
  
 
 

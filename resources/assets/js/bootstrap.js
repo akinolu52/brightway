@@ -6,6 +6,7 @@ try {
 
 window.axios = require('axios');
 
+window.select2 = require('select2');
 window.aos = require('aos');
 aos.init();
 

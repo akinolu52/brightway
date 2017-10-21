@@ -1,7 +1,6 @@
 <div class="row sub-menu w-100 m-0">
     <div class="col-12 d-flex justify-content-end align-items-center p-0">
         <p class="d-inline-block m-0 pr-4"><span class="fa fa-phone"></span> Call us now <a href="" class="number-link">808</a></p>
-        <button type="button" class="btn btn-def px-4 text-uppercase" data-toggle="modal" data-target="#myModal">sign in</button>
     </div>
 </div>
 
