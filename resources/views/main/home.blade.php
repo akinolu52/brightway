@@ -17,10 +17,11 @@
         </div>
     </div>
     <div class="card tracker p-4">
-        <h5 class="tracker-header mb-1 text-center">TRACK YOUR PRODUCT <span class="mild-text ml-2">now you can track your product easily</span></h5>
+        <h5 class="tracker-header m-0 text-center">TRACK YOUR PRODUCT </h5>
+        <p class="mild-text mb-1 text-center">now you can track your product easily</p>
         <form action="{{ url('/track') }}" method="post">
              {{ csrf_field() }}
-            <div class="row w-100 m-0 no-gutters">
+            <div class="row w-100 m-0 no-gutters justify-content-center">
                 <div class="col-md-12 px-1 my-1">
                     <input class="form-control tracker-item" type="number" placeholder="Order id" name="trackid">
                 </div>
@@ -97,66 +98,50 @@
                 @if(!isset($message))
                     <form action="{{ url('/user') }}" method="post">
                        {{ csrf_field() }}
-                        <div class="form-group align-items-center">
-                            <div class="">
-                                <input type="text" class="form-control form-control-nbr" id="" name="firstname" placeholder="First Name">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="form-group align-items-center">
+                                        <input type="text" class="form-control form-control-nbr" id="" name="firstname" placeholder="First Name" required>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="form-group align-items-center">
+                                        <input type="text" class="form-control form-control-nbr" id="" name="lastname" placeholder="Last Name" required>
+                                </div>
                             </div>
                         </div>
+
                         <div class="form-group align-items-center">
-                            <label for="" class=" semi-loud-text m-0">Last Name</label>
-                            <div class="">
-                                <input type="text" class="form-control form-control-nbr" id="" name="lastname">
-                            </div>
+                                <input type="email" class="form-control form-control-nbr" id="" name="email" placeholder="Email" required>
                         </div>
                         <div class="form-group align-items-center">
-                            <label for="" class=" semi-loud-text m-0">Email</label>
-                            <div class="">
-                                <input type="email" class="form-control form-control-nbr" id="" name="email">
-                            </div>
+                                <input type="number" class="form-control form-control-nbr" id="" name="number" placeholder="Phone Number" required>
                         </div>
                         <div class="form-group align-items-center">
-                            <div class="">
-                                <input type="number" class="form-control form-control-nbr" id="" name="number" placeholder="Phone Number">
-                            </div>
+                                <input type="number" class="form-control form-control-nbr" id="" name="quantity" placeholder="Number of Items" required>
                         </div>
                         <div class="form-group align-items-center">
-                            <label for="" class=" semi-loud-text m-0">Number of Items</label>
-                            <div class="">
-                                <input type="number" class="form-control form-control-nbr" id="" name="quantity">
-                            </div>
-                        </div>
-                        <div class="form-group align-items-center">
-                            <div class="">
-                                <select name= "from" required >
+                                <select name= "from" required class="form-control form-control-nbr select-2">
                                     @for ($i = 0; $i < count($locations); $i++)
                                          <option value = "{{ $locations[$i]}} "> {{ $locations[$i] }} </option> 
                                     @endfor
                                 </select>
-                            </div>
                         </div>
                         <div class="form-group align-items-center">
-                            <div class="">
                                 <input type="text" class="form-control form-control-nbr" id="" name="from_address" placeholder="From Address" required>
-                            </div>
                         </div>
                         <div class="form-group align-items-center">
-                            <div class="">
-                                <select name= "to" required >
+                                <select name= "to" required class="form-control form-control-nbr select-2">
                                     @for ($i = 0; $i < count($locations); $i++)
                                         <option value = "{{ $locations[$i]}} "> {{ $locations[$i] }} </option> 
                                     @endfor
                                 </select>
-                            </div>
                         </div>
                         <div class="form-group align-items-center">
-                            <div class="">
                                 <input type="text" class="form-control form-control-nbr" id="" name="to_address" placeholder="To Address" required>
-                            </div>
                         </div>
                         <div class="form-group align-items-center">
-                            <div class="">
-                                <input type="submit" class="form-control form-control-nbr" id="" value="Deliver">
-                            </div>
+                               <input type="submit" class="form-control btn-def form-control-nbr" id="" value="Deliver">
                         </div>
                         
                     </form>
@@ -279,12 +264,9 @@
                                 </h4>
                             </div>
                             <div class="col-6">
-                                <p>
-                                    <a href="tel:" class="milder-text">No 10 Olanrewaju street by community rd bus stop ago , okota Lagos.</a>
+                                <p class="milder-text">
+                                    No 10 Olanrewaju street by community rd bus stop ago , okota Lagos.
                                 </p>
-                                {{--  <p>
-                                    <a href="tel:" class="milder-text">08081</a>
-                                </p>  --}}
                             </div>  
                         </div>
                          <div class="row d-flex align-items-center">
@@ -295,10 +277,10 @@
                             </div>
                             <div class="col-6">
                                 <p>
-                                    <a href="tel:" class="milder-text">0811 281 8373</a>
+                                    <a href="tel:+2348112818373" class="milder-text">0811 281 8373</a>
                                 </p>
                                 <p>
-                                    <a href="tel:" class="milder-text">09025417206.</a>
+                                    <a href="tel:+2349025417206" class="milder-text">0902 541 7206</a>
                                 </p>
                             </div>
                         </div>
@@ -310,7 +292,7 @@
                             </div>
                             <div class="col-6">
                                 <p>
-                                    <a href="" class="milder-text">Brightwaydelivery@gmail.com</a>
+                                    <a href="mailto:brightwaydelivery@gmail.com" class="milder-text">brightwaydelivery@gmail.com</a>
                                 </p>
                             </div>
                         </div>

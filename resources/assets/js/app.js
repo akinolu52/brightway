@@ -1,7 +1,9 @@
 require('./bootstrap');
 
 jQuery(document).ready(function() {
-    jQuery(".loader_overlay").css("display","none");
+    // $('.select-2').select2();
+    jQuery('.fbtt').fadeOut();
+    jQuery(".loader_overlay").fadeOut(duration);
 
     var offset = 250;
     var duration = 500;
