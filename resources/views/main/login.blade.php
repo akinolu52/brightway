@@ -11,7 +11,11 @@
                        REGISTER & LOGIN
                     </h1>
                 <div class="row">
-                    <div class="col-md-7 p-0">
+                    <div class="col-md-6 my-4">
+
+                        <h1 class="semi-loud-text">
+                            REGISTER
+                        </h1>
                         <form action="{{ url('/register')}}" class="border p-2" method="post">
                               {{ csrf_field() }}
                             <div class="form-group">
@@ -27,11 +31,15 @@
                                 Register
                             </button>
                         </form>
-
+                    </div>
                     
 
                     
-                    <div class="col-md-3 p-0">
+                    <div class="col-md-6 my-4">
+
+                        <h1 class="semi-loud-text">
+                            LOGIN
+                        </h1>
                         <form action="{{ url('/signIn')}}" class="border p-2" method="post">
                              {{ csrf_field() }}
                             <div class="form-group">
