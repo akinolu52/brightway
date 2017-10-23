@@ -50,9 +50,18 @@ Route::post('/register', 'AdminController@signUp');
 
 Route::group(['middleware'=>'auth'], function(){
 
-    Route::get('/admin', 'AdminController@index'); 
+    Route::prefix('admin')->group(function () {
+        Route::get('/',[
+            'uses' => 'AdminController@index',
+            'as' => 'admin.index'
+        ]);
     
-    Route::get('/admin/edit/{id}', 'AdminController@edit');
+    Route::get('/edit/{id}', 'AdminController@edit');
+
+    Route::post('/update/{id}', 'AdminController@update');
+    });
+    // Route::get('/admin', 'AdminController@index'); 
+    
 
 
 });

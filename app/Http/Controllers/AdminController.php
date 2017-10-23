@@ -33,14 +33,14 @@ class AdminController extends Controller
         $users = User::all();
 
         if( Auth::attempt([ 'email'=> $request['email'] , 'password' => $request['password'] ])){
-          return view('/admin/index' , compact('users'));  
+        //   return view('admin.index' , compact('users'));  
+            return redirect()->route('admin.index');
         }
         return view('main.login' , ['message' => 'Incorrect Password']);
     }
     
     public function index(){
-        $users = User::all();
-        return view('admin.index', compact('users'));
+        return view('admin.index', compact(User::all()));
     }
     
     public function edit($id){
@@ -49,7 +49,8 @@ class AdminController extends Controller
     }
     public function update(Request $request , $id){
 
-        $input = $request->all();
-        User::whereId($id)->first()->update($input);
+        User::where('id', $id)->update(array('status' => $request['status']));
+
+        return redirect()->route('admin.index');
     }
 }

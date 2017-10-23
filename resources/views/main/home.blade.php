@@ -132,12 +132,14 @@
                         </div>
                         <div class="form-group align-items-center">
                                 <select name= "to" required class="form-control form-control-nbr select-2">
+                                    <option value="" disabled selected>What area are you delivering from</option>
                                     @for ($i = 0; $i < count($locations); $i++)
                                         <option value = "{{ $locations[$i]}} "> {{ $locations[$i] }} </option> 
                                     @endfor
                                 </select>
                         </div>
                         <div class="form-group align-items-center">
+                               <option value="" disabled selected>What area are you delivering to</option>
                                 <input type="text" class="form-control form-control-nbr" id="" name="to_address" placeholder="To Address" required>
                         </div>
                         <div class="form-group align-items-center">

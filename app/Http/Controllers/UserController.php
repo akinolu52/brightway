@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\User;
+use Illuminate\Support\Facades\Mail;
 
 class UserController extends Controller
 {
@@ -79,10 +80,18 @@ class UserController extends Controller
 
         $user->save();
         $message = '';
-        if ($user->save){
+        if ($user->save()){
             $message = "Check Your Mail to get Tracking ID";
         }
-    
+
+        // Send Mail
+        $data = array("trackid" => $user->trackid , 'email' => $request['email'] , 'from' => 'brightwaydelivery@gmail.com' ,'name' => 'Bright Way Delivery');
+
+        Mail::send('emails.trackid', $data, function($message) use ($data)
+        {
+            $message->to( $data['email'] )->from( $data['from'], $data['name'] )->subject( 'Your Tracking ID' );
+        });
+
         return view('main.home',['message' => "Check Your Mail to get Tracking ID" ]);
     }
 

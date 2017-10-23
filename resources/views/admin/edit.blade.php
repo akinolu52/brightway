@@ -34,36 +34,12 @@
                             {{--  @include('includes.form_error')  --}}
                             <!-- /.form-group -->
                             <div class="col-md-9">
-                               <form action="{{ url('/update') }}" method="patch">
+                               <form action="{{ url('/admin/update/'.$user->id) }}" method="post">
                                   {{ csrf_field() }}
                                 <div class="form-group align-items-center">
-                                    <label for="" class=" semi-loud-text m-0">First Name</label>
+                                    <label for="" class=" semi-loud-text m-0">Update Status</label>
                                     <div class="">
-                                        <input type="text" class="form-control form-control-nbr"  name="firstname" value="{{$user->firstname}}">
-                                    </div>
-                                </div>
-                                <div class="form-group align-items-center">
-                                    <label for="" class=" semi-loud-text m-0">Last Name</label>
-                                    <div class="">
-                                        <input type="text" class="form-control form-control-nbr"  name="lastname" value="{{$user->lastname}}">
-                                    </div>
-                                </div>
-                                <div class="form-group align-items-center">
-                                    <label for="" class=" semi-loud-text m-0">Email</label>
-                                    <div class="">
-                                        <input type="email" class="form-control form-control-nbr"  name="email" value="{{$user->email}}">
-                                    </div>
-                                </div>
-                                <div class="form-group align-items-center">
-                                    <label for="" class=" semi-loud-text m-0">Number of Items</label>
-                                    <div class="">
-                                        <input type="number" class="form-control form-control-nbr"  name="quantity" value="{{$user->quantity}}">
-                                    </div>
-                                </div>
-                                <div class="form-group align-items-center">
-                                    <label for="" class=" semi-loud-text m-0">Number of Items</label>
-                                    <div class="">
-                                        <input type="number" class="form-control form-control-nbr"  name="status" value="{{$user->status}}">
+                                        <input type="text" class="form-control form-control-nbr"  name="status" value="{{$user->status}}">
                                     </div>
                                 </div>
                                 <div class="form-group align-items-center">
