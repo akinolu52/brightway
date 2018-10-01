@@ -80,12 +80,12 @@ class UserController extends Controller
         }
 
         // Send Mail
-        $data = array("trackid" => $user->trackid , 'email' => $request['email'] , 'from' => 'brightwaydelivery@gmail.com' ,'name' => 'Bright Way Delivery');
+        // $data = array("trackid" => $user->trackid , 'email' => $request['email'] , 'from' => 'brightwaydelivery@gmail.com' ,'name' => 'Bright Way Delivery');
 
-        Mail::send('emails.trackid', $data, function($message) use ($data)
-        {
-            $message->to( $data['email'] )->from( $data['from'], $data['name'] )->subject( 'Your Tracking ID' );
-        });
+        // Mail::send('emails.trackid', $data, function($message) use ($data)
+        // {
+        //     $message->to( $data['email'] )->from( $data['from'], $data['name'] )->subject( 'Your Tracking ID' );
+        // });
 
         return view('main.home',['message' => "Check Your Mail to get Tracking ID" ]);
     }
