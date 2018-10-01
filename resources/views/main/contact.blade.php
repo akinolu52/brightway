@@ -1,110 +1,66 @@
-@extends('layouts.master')
+@extends('layouts.general')
 
 @section('title')
-    Contact us
+    Contact
 @endsection
+
+@section('page-link'){{ url('contact') }}@endsection
 
 @section('content')
-    <section id="contact">
-        <div class="container py-5">
-            <h1 class="loud-text">CONTACT US</h1>
-            <div class="row">
-                <div class="col-md-6">
-                    <div class="row d-flex align-items-center">
-                        <div class="col-6">
-                            <h4 class="semi-loud-text">
-                                ADDRESS:
-                            </h4>
-                        </div>
-                        <div class="col-6">
-                            <p class="milder-text">
-                                No 10 Olanrewaju street by community rd bus stop ago , okota Lagos.
-                            </p>
-                        </div>
-                    </div>
-                    <div class="row d-flex align-items-center">
-                        <div class="col-6">
-                            <h4 class="semi-loud-text">
-                                Numbers:
-                            </h4>
-                        </div>
-                        <div class="col-6">
-                            <p>
-                                <a href="tel:+2348112818373" class="milder-text">0811 281 8373</a>
-                            </p>
-                            <p>
-                                <a href="tel:+2349025417206" class="milder-text">0902 541 7206</a>
-                            </p>
-                        </div>
-                    </div>
-                    <div class="row d-flex align-items-center">
-                        <div class="col-6">
-                            <h4 class="semi-loud-text">
-                                Email address:
-                            </h4>
-                        </div>
-                        <div class="col-6">
-                            <p>
-                                <a href="mailto:brightwaydelivery@gmail.com" class="milder-text">brightwaydelivery@gmail.com</a>
-                            </p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-6">
-                    <form action="">
-                        <div class="form-group row align-items-center">
-                            <label for="" class="col-sm-3 semi-loud-text m-0">Name</label>
-                            <div class="col-sm-9">
-                                <input type="text" class="form-control form-control-nbr" id="" required>
-                            </div>
-                        </div>
-                        <div class="form-group row align-items-center">
-                            <label for="" class="col-sm-3 semi-loud-text m-0">Email</label>
-                            <div class="col-sm-9">
-                                <input type="email" class="form-control form-control-nbr" id="" required>
-                            </div>
-                        </div>
-                        <div class="form-group row align-items-center">
-                            <label for="" class="col-sm-3 semi-loud-text m-0">Subject</label>
-                            <div class="col-sm-9">
-                                <input type="text" class="form-control form-control-nbr" id="">
-                            </div>
-                        </div>
-                        <div class="form-group row">
-                            <label for="" class="col-sm-3 semi-loud-text m-0">Message</label>
-                            <div class="col-sm-9">
-                                <textarea name="" id="" cols="30" rows="10" class="form-control form-control-nbr" required></textarea>
-                            </div>
-                        </div>
-                        <div class="row justify-content-end">
-                            <div class="col-sm-9 mb-3">
-                                <button class="btn btn-def btn-block">Send Message</button>
-                            </div>
-                        </div>
-                    </form>
-                </div>
-            </div>
-            <div id="map"></div>
-        </div>
-    </section>
-@endsection
-
-@section('scripts')
-
-    <script>
-        function initMap() {
-            var uluru = {lat: 6.5532415, lng: 3.2649028};
-            var map = new google.maps.Map(document.getElementById('map'), {
-                zoom: 16,
-                center: uluru
-            });
-            var marker = new google.maps.Marker({
-                position: uluru,
-                map: map
-            });
-        }
-    </script>
-    <script async defer
-            src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAWwVZp-9zVTfng0X1x2tbUqvBNnd0iPxM&callback=initMap">
-    </script>
+<!--Section fourteen Contact form start-->
+<div class="ed_transprentbg ed_toppadder90 ed_bottompadder90">
+	<div class="container">
+		<div class="row">
+			<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+				<div class="ed_heading_top ed_bottompadder50">
+					<h3>contact info</h3>
+				</div>
+			</div>
+			<div class="col-lg-6 col-md-6 col-sm-6">
+				<div class="ed_contact_form">
+					<div class="form-group">
+						<input type="text" id="uname" class="form-control"  placeholder="Your Name">
+					</div>
+					<div class="form-group">
+						<input type="email" id="umail" class="form-control"  placeholder="Your Email">
+					</div>
+					<div class="form-group">
+						<input type="text" id="sub" class="form-control"  placeholder="Subject">
+					</div>
+					<div class="form-group">
+						<textarea id="msg" class="form-control" rows="4" placeholder="Message"></textarea>
+					</div>
+					<button id="ed_submit" class="btn ed_btn ed_orange ">send</button>
+					<p id="err"></p>
+				</div>
+			</div>
+			<div class="col-lg-6 col-md-6 col-sm-6">
+				<div class="ed_event_single_address_info">
+					<h4 class="">We will give you our best</h4>
+					<p class="ed_bottompadder40 ed_toppadder10">You can always reach us via following contact details. We will give our best to reach you as possible.</p>
+					<p>Phone: <span>1800-2202-0909</span></p>
+					<p>Email: <a href="#">info@transportingservices.com</a></p>
+					<p>Website: <a href="#">http://www.transportingservices.co.in</a></p>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<!--Section fourteen Contact form start-->
+<!--Section fifteen Contact form start-->
+<div class="ed_event_single_contact_address ed_toppadder90">
+	<div class="container">
+		<div class="row">
+			<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+				<div class="ed_heading_top ed_bottompadder50">
+					<h3>Find here</h3>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="ed_event_single_address_map">
+		<div id="map"></div>
+	</div>
+</div>
+<!--Section fifteen Contact form start-->
 @endsection

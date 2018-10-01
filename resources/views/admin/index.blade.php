@@ -5,12 +5,7 @@
         <div class="col-xs-12">
             <div class="box box-default">
                 <div class="box-header with-border">
-                  <h3 class="box-title">All Events</h3>
-
-                  <div class="box-tools pull-right">
-                    <button type="button" class="btn btn-box-tool" data-widget="collapse"><i class="fa fa-minus"></i></button>
-                    <button type="button" class="btn btn-box-tool" data-widget="remove"><i class="fa fa-remove"></i></button>
-                  </div>
+                  <h3 class="box-title">Users & Cargo</h3>
                 </div>
                 <!-- /.box-header -->
                 <div class="box-body">
@@ -34,7 +29,7 @@
                         </thead>
                         <tbody>
                         
-                        @if($users)
+                        @if(null !== $users)
                             @foreach($users as $user)
                                 <tr>
                                    <td>{{$user->id}}</td>

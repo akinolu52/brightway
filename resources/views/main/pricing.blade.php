@@ -1,229 +1,83 @@
-@extends('layouts.master')
+@extends('layouts.general')
 
 @section('title')
     Pricing
 @endsection
 
+@section('page-link'){{ url('pricing') }}@endsection
+
 @section('content')
-    <section id="pricing" class="py-5">
-        <div class="container">
-            <div class="header text-center">
-                <h3 class="loud-text">PRICING & PLAN</h3>
-                <p class="mild-text">see our pricing & plan to get the best services</p>
-            </div>
-
-            <div class="row">
-                <div class="col-md-4">
-                    <div class="pricing-panel p-4 text-center" data-aos="slide-up" data-aos-delay="100" data-aos-duration="500" data-aos-once="true">
-                        <div class="pricing-price">
-                            $150
-                        </div>
-                        <div class="pricing-desc">
-                            for multiple products
-                        </div>
-                        <div class="pricing-header">
-                            standard
-                        </div>
-                        <div class="pricing-description">
-                            <h4 class="pricing-title">
-                                PRODUCT WEIGHT:
-                                <span>< 3KG</span>
-                            </h4>
-                            <h4 class="pricing-title">
-                                PRODUCT WEIGHT:
-                                <span>< 3KG</span>
-                            </h4>
-                            <h4 class="pricing-title">
-                                PRODUCT WEIGHT:
-                                <span>< 3KG</span>
-                            </h4>
-                            <h4 class="pricing-title">
-                                PRODUCT WEIGHT:
-                                <span>< 3KG</span>
-                            </h4>
-
-                        </div>
-                        <div class="pricing-footer">
-                            <a href="">ORDER NOW <span class="fa fa-arrow-right"></span></a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="pricing-panel active p-4 text-center" data-aos="slide-up" data-aos-delay="200" data-aos-duration="500" data-aos-once="true">
-                        <div class="pricing-price">
-                            $150
-                        </div>
-                        <div class="pricing-desc">
-                            for multiple products
-                        </div>
-                        <div class="pricing-header">
-                            standard
-                        </div>
-                        <div class="pricing-description">
-                            <h4 class="pricing-title">
-                                PRODUCT WEIGHT:
-                                <span>< 3KG</span>
-                            </h4>
-                            <h4 class="pricing-title">
-                                PRODUCT WEIGHT:
-                                <span>< 3KG</span>
-                            </h4>
-                            <h4 class="pricing-title">
-                                PRODUCT WEIGHT:
-                                <span>< 3KG</span>
-                            </h4>
-                            <h4 class="pricing-title">
-                                PRODUCT WEIGHT:
-                                <span>< 3KG</span>
-                            </h4>
-
-                        </div>
-                        <div class="pricing-footer">
-                            <a href="">ORDER NOW <span class="fa fa-arrow-right"></span></a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="pricing-panel p-4 text-center" data-aos="slide-up" data-aos-delay="300" data-aos-duration="500" data-aos-once="true">
-                        <div class="pricing-price">
-                            $150
-                        </div>
-                        <div class="pricing-desc">
-                            for multiple products
-                        </div>
-                        <div class="pricing-header">
-                            standard
-                        </div>
-                        <div class="pricing-description">
-                            <h4 class="pricing-title">
-                                PRODUCT WEIGHT:
-                                <span>< 3KG</span>
-                            </h4>
-                            <h4 class="pricing-title">
-                                PRODUCT WEIGHT:
-                                <span>< 3KG</span>
-                            </h4>
-                            <h4 class="pricing-title">
-                                PRODUCT WEIGHT:
-                                <span>< 3KG</span>
-                            </h4>
-                            <h4 class="pricing-title">
-                                PRODUCT WEIGHT:
-                                <span>< 3KG</span>
-                            </h4>
-
-                        </div>
-                        <div class="pricing-footer">
-                            <a href="">ORDER NOW <span class="fa fa-arrow-right"></span></a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="pricing-panel p-4 text-center" data-aos="slide-up" data-aos-delay="400" data-aos-duration="500" data-aos-once="true">
-                        <div class="pricing-price">
-                            $150
-                        </div>
-                        <div class="pricing-desc">
-                            for multiple products
-                        </div>
-                        <div class="pricing-header">
-                            standard
-                        </div>
-                        <div class="pricing-description">
-                            <h4 class="pricing-title">
-                                PRODUCT WEIGHT:
-                                <span>< 3KG</span>
-                            </h4>
-                            <h4 class="pricing-title">
-                                PRODUCT WEIGHT:
-                                <span>< 3KG</span>
-                            </h4>
-                            <h4 class="pricing-title">
-                                PRODUCT WEIGHT:
-                                <span>< 3KG</span>
-                            </h4>
-                            <h4 class="pricing-title">
-                                PRODUCT WEIGHT:
-                                <span>< 3KG</span>
-                            </h4>
-
-                        </div>
-                        <div class="pricing-footer">
-                            <a href="">ORDER NOW <span class="fa fa-arrow-right"></span></a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="pricing-panel p-4 text-center" data-aos="slide-up" data-aos-delay="500" data-aos-duration="500" data-aos-once="true">
-                        <div class="pricing-price">
-                            $150
-                        </div>
-                        <div class="pricing-desc">
-                            for multiple products
-                        </div>
-                        <div class="pricing-header">
-                            standard
-                        </div>
-                        <div class="pricing-description">
-                            <h4 class="pricing-title">
-                                PRODUCT WEIGHT:
-                                <span>< 3KG</span>
-                            </h4>
-                            <h4 class="pricing-title">
-                                PRODUCT WEIGHT:
-                                <span>< 3KG</span>
-                            </h4>
-                            <h4 class="pricing-title">
-                                PRODUCT WEIGHT:
-                                <span>< 3KG</span>
-                            </h4>
-                            <h4 class="pricing-title">
-                                PRODUCT WEIGHT:
-                                <span>< 3KG</span>
-                            </h4>
-
-                        </div>
-                        <div class="pricing-footer">
-                            <a href="">ORDER NOW <span class="fa fa-arrow-right"></span></a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="pricing-panel p-4 text-center" data-aos="slide-up" data-aos-delay="600" data-aos-duration="500" data-aos-once="true">
-                        <div class="pricing-price">
-                            $150
-                        </div>
-                        <div class="pricing-desc">
-                            for multiple products
-                        </div>
-                        <div class="pricing-header">
-                            standard
-                        </div>
-                        <div class="pricing-description">
-                            <h4 class="pricing-title">
-                                PRODUCT WEIGHT:
-                                <span>< 3KG</span>
-                            </h4>
-                            <h4 class="pricing-title">
-                                PRODUCT WEIGHT:
-                                <span>< 3KG</span>
-                            </h4>
-                            <h4 class="pricing-title">
-                                PRODUCT WEIGHT:
-                                <span>< 3KG</span>
-                            </h4>
-                            <h4 class="pricing-title">
-                                PRODUCT WEIGHT:
-                                <span>< 3KG</span>
-                            </h4>
-
-                        </div>
-                        <div class="pricing-footer">
-                            <a href="">ORDER NOW <span class="fa fa-arrow-right"></span></a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
+<div class="ed_transprentbg ed_toppadder90 ed_bottompadder60">
+	<div class="container">
+		<div class="row">
+			<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+				<div class="ed_heading_top ed_bottompadder50">
+					<h3>Our pricing table</h3>
+				</div>
+			</div>
+		</div>
+		<div class="ed_pricing_table_wrapper_second">
+		<div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
+			<div class="ed_pricing_table">
+				<div class="ed_pricing_heading">
+					<div class="ed_table_price">
+						<p class="ed_price_dollar"><sup>$ </sup>29<sub> /day</sub></p>
+					</div>
+					<h2>starter</h2>
+				</div>
+				<ul>
+					<li>One Day Trial</li>
+					<li>Limited delivery</li>
+					<li>3 men</li>
+					<li>No Supporter</li>
+					<li>shiping charges</li>
+				</ul>
+				<div class="ed_pricing_tabel_footer">
+					<a href="#" class="btn ed_btn ed_orange">purchase now</a>
+				</div>
+			</div>
+		</div>
+		<div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
+			<div class="ed_pricing_table">
+				<div class="ed_pricing_heading">
+					<div class="ed_table_price">
+						<p class="ed_price_dollar"><sup>$ </sup>35<sub> /day</sub></p>
+					</div>
+					<h2>basic</h2>
+				</div>
+				<ul>
+					<li>One Day Standard Access</li>
+					<li>Limited delivery</li>
+					<li>3 men</li>
+					<li>Random Supporter</li>
+					<li>shiping charges</li>
+				</ul>
+				<div class="ed_pricing_tabel_footer">
+					<a href="#" class="btn ed_btn ed_orange">purchase now</a>
+				</div>
+			</div>
+		</div>
+		<div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
+			<div class="ed_pricing_table">
+				<div class="ed_pricing_heading">
+					<div class="ed_table_price">
+						<p class="ed_price_dollar"><sup>$ </sup>40<sub> /yr</sub></p>
+					</div>
+					<h2>premium</h2>
+				</div>
+				<ul>
+					<li>Life Time Access</li>
+					<li>Unlimited delivery</li>
+					<li>3+ men</li>
+					<li>Free Supporter</li>
+					<li>Free shiping</li>
+				</ul>
+				<div class="ed_pricing_tabel_footer">
+					<a href="#" class="btn ed_btn ed_orange">purchase now</a>
+				</div>
+			</div>
+		</div>
+		</div>
+    </div><!-- /.container -->
+</div>
 @endsection

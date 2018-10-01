@@ -7,7 +7,7 @@ use App\User;
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>BrightWay Delivery | Admin</title>
+    <title>Gemscargo | Admin</title>
     <!-- Tell the browser to be responsive to screen width -->
     <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
     <link rel="stylesheet" href="{{asset('css/app.css')}}">
@@ -38,55 +38,38 @@ use App\User;
             <!-- mini logo for sidebar mini 50x50 pixels -->
             <span class="logo-mini"><b><i class="fa fa-book"></i></b></span>
             <!-- logo for regular state and mobile devices -->
-            <span class="logo-lg"><b><i class="fa fa-feather"></i> BrightWay Delivery</b></span>
+            
+            
+            
+            <span class="logo-lg"><b><i class="fa fa-feather"></i> <a href="/" style="color: #fff"> Gemscargo </a></b></span>
         </div>
 
         <!-- Header Navbar: style can be found in header.less -->
         <nav class="navbar navbar-static-top" role="navigation">
             <!-- Sidebar toggle button-->
-            <a href="#" class="sidebar-toggle" data-toggle="offcanvas" role="button">
+            {{-- <a href="#" class="sidebar-toggle" data-toggle="offcanvas" role="button">
                 <span class="sr-only">Toggle navigation</span>
             </a>
             <!-- Navbar Right Menu -->
-            <div class="navbar-custom-menu">
+             <div class="navbar-custom-menu">
                 <ul class="nav navbar-nav">
-                    <!-- Messages: style can be found in dropdown.less-->
-
-                    <!-- Notifications: style can be found in dropdown.less -->
-
-
-                    <!-- User Account: style can be found in dropdown.less -->
                     <li class="dropdown user user-menu">
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown">
-                            <img src="/images/avatar.png" class="user-image" alt="User Image">
+                            <img src="#" class="user-image" alt="User Image">
                             {{--  <span class="hidden-xs">{{ Auth::user()->name }}</span>  --}}
                         </a>
                         <ul class="dropdown-menu">
                             <!-- User image -->
                             <li class="user-header">
-                                <img src="/images/avatar.png" class="img-circle" alt="User Image">
-                                <p>
-                                    {{--  {{ Auth::user()->name }} - Poised Concierge  --}}
-
-                                </p>
+                                <img src="#" class="img-circle" alt="User Image">
+                                
                             </li>
                             <!-- Menu Footer-->
-                            <li class="user-footer">
-                                <a class="btn btn-default" href="{{ url('/logout') }}"
-                                   onclick="event.preventDefault();
-                                                     document.getElementById('logout-form').submit();">
-                                    Logout
-                                </a>
-
-                                <form id="logout-form" action="{{ url('/logout') }}" method="POST" style="display: none;">
-                                    {{ csrf_field() }}
-                                </form>
-                            </li>
                         </ul>
                     </li>
 
                 </ul>
-            </div>
+            </div>--}}
 
         </nav>
     </header>
@@ -97,7 +80,7 @@ use App\User;
             <!-- Sidebar user panel -->
             <div class="user-panel">
                 <div class="pull-left image">
-                    <img src="/images/avatar.png" class="img-circle" alt="User Image">
+                    <img src="/img/avatar.jpg" class="img-circle" alt="User Image">
                 </div>
                 <div class="pull-left info">
                     {{--  <p>{{ Auth::user()->name }}</p>  --}}
@@ -123,6 +106,16 @@ use App\User;
                         <li><a href=""><i class="fa fa-circle-o"></i> All Users<small class="label pull-right bg-green"></small></a> </li>
                     </ul>
                 </li>
+                <li class="treeview">
+                    <a href="{{ url('/logout') }}" onclick="event.preventDefault(); document.getElementById('logout-form-1').submit();">
+                        <i class="fa fa-power-off"></i> 
+                        Logout
+                    </a>
+
+                    <form id="logout-form-1" action="{{ url('/logout') }}" method="POST" style="display: none;">
+                        {{ csrf_field() }}
+                    </form>
+                </li>
             </ul>
 
         </section>
@@ -137,9 +130,9 @@ use App\User;
     </div><!-- /.content-wrapper -->
     <footer class="main-footer">
         <div class="pull-right hidden-xs">
-            <b>Version</b> 1.0.0
+            <!-- <b>Version</b> 1.0.0 -->
         </div>
-        <strong>Copyright &copy; {{Date('Y')}} <a href="http://www.brightwaydelivery.com">BrightWay Delivery</a>.</strong> All rights reserved.
+        <strong>Copyright &copy; {{Date('Y')}} <a href="#">Gemscargo</a>.</strong> All rights reserved.
     </footer>
     <!-- Add the sidebar's background. This div must be placed
    immediately after the control sidebar -->

@@ -39,8 +39,14 @@ class AdminController extends Controller
         return view('main.login' , ['message' => 'Incorrect Password']);
     }
     
+    public function logout(Request $request) {
+        Auth::logout();
+        return redirect('/');
+    }
+
     public function index(){
-        return view('admin.index', compact(User::all()));
+        $data['users'] = User::all();
+        return view('admin.index', $data);
     }
     
     public function edit($id){
