@@ -13,8 +13,7 @@
 <title>Gemscargo - Transport and shipping</title>
 <meta content="width=device-width, initial-scale=1.0" name="viewport" />
 <meta name="description"  content="Transporting"/>
-<meta name="keywords" content="Transporting, html template" />
-<meta name="author"  content="Kamleshyadav"/>
+<meta name="keywords" content="Transporting, Cargo, Shipping" />
 <meta name="MobileOptimized" content="320" />
 
 <!--srart theme style -->
