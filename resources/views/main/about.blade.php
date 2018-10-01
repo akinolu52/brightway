@@ -13,9 +13,15 @@
 		<div class="row">
 			<div class="col-lg-6 col-md-6 col-sm-12">
 				<div class="ed_video_section_discription">
-					<h4>about Transporting</h4>
-					<p>We denounce with righteous indignation and dislike men who are so beguiled and demoralized by the charms of pleasure of the moment, so blinded by desire, that they cannot foresee the pain and trouble that are bound to ensue; and equal blame belongs to those who fail in their duty through weakness of will, which is the same as saying through shrinking from toil and pain. These cases are perfectly simple and easy to distinguish. In a free hour, when our power of choice is untrammelled and when nothing prevents our being able to do what we like best, every pleasure is to be welcomed and every pain avoided.</p>
-					<p>On the other hand, certain circumstances and owing to the claims of duty or the obligations of business it will frequently occur that pleasures have to be repudiated and annoyances accepted.</p>
+					<h4>About Gemscargo</h4>
+		<p>Gemscargo is one of the fastest growing transportation and logistics company based at Dubai, U.A.E. We provide comprehensive and par excellence services globally. While having a strong network and alliances with carriers and agents all over the world, we are able to provide every logistic solution to our valued customers while being flexible and affordable at the same time. 
+</p><p>
+Affiliated and recognized member of IFA (International Freight Association), we follow set standards and policies to serve our clients with the best of both the worlds.
+Backed by highly motivated, energetic and experienced staff, Gemscargo has grown quickly as a leading U.A.E. distributor and renowned world class freight and logistics solutions provider.
+</p><p>
+Our team includes professionals who are serving the industry for long and Gemscargo U.A.E. boasts accumulated years of our man experience. Gemscargo has wide spread warehousing capabilities in the U.A.E. and therefore enjoys the status and fame for being a perfect solution provider for distributions services in U.A.E. Range of services offered at Gemscargo extends to freight and project forwarding, logistics, consolidation, custom clearance, domestic distribution and information management. 
+Backed by latest information technology infrastructure, we pride and flaunt our excellence in managing and tracking our tasks. Our major trade lanes include Middle East, U.A.En Sub Continent, Far East, USA and Africa.
+</p>
 				</div>
 			</div>
 			<div class="col-lg-6 col-md-6 col-sm-12">
@@ -47,42 +53,42 @@
 			<div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
 				<div class="skill_section">
 					<h4>trustable</h4>
-					<p>Nam cursus imperdiet elit. Fusce sollicitudin eget nulla in condime.</p>
+					<p>You can trust our services. we have clientel in over 24 countries</p>
 					<span><i class="fa fa-handshake-o" aria-hidden="true"></i></span>
 				</div>
 			</div>
 			<div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
 				<div class="skill_section">
 					<h4>support 24x7</h4>
-					<p>Nam cursus imperdiet elit. Fusce sollicitudin eget nulla in condime.</p>
+					<p>we provide 24 hours support service to our clients.</p>
 					<span><i class="fa fa-users" aria-hidden="true"></i></span>
 				</div>
 			</div>
 			<div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
 				<div class="skill_section">
 					<h4>rewards</h4>
-					<p>Nam cursus imperdiet elit. Fusce sollicitudin eget nulla in condime.</p>
+					<p>We have reward system for our clients.</p>
 					<span><i class="fa fa-gift" aria-hidden="true"></i></span>
 				</div>
 			</div>
 			<div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
 				<div class="skill_section">
 					<h4>satisfied cost</h4>
-					<p>Nam cursus imperdiet elit. Fusce sollicitudin eget nulla in condime.</p>
+					<p>Our services are cheap and affordable.</p>
 					<span><i class="fa fa-money" aria-hidden="true"></i></span>
 				</div>
 			</div>
 			<div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
 				<div class="skill_section">
 					<h4>user friendly</h4>
-					<p>Nam cursus imperdiet elit. Fusce sollicitudin eget nulla in condime.</p>
+					<p>We provide a friendly interface for users.</p>
 					<span><i class="fa fa-child" aria-hidden="true"></i></span>
 				</div>
 			</div>
 			<div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
 				<div class="skill_section">
 					<h4>discounts</h4>
-					<p>Nam cursus imperdiet elit. Fusce sollicitudin eget nulla in condime.</p>
+					<p>Price come with discount, why dont you try us.</p>
 					<span><i class="fa fa-tags" aria-hidden="true"></i></span>
 				</div>
 			</div>
