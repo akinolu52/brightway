@@ -34,7 +34,7 @@
 				<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
 					<div class="pro_call">
 						<p style="font-size: 14px; line-height: 24px;">call now <i class="fa fa-volume-control-phone" aria-hidden="true"></i> 
-							<a href="tel:+2349055695712" style="color: #FFF;"> 234-905-569-5712</a> </p>
+							<a href="tel:+971529670247" style="color: #FFF;"> +971-52-967-0247</a> </p>
 					</div>
 				</div>
 				<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
