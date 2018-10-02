@@ -19,7 +19,8 @@ return [
         'mysql' => [
             'driver' => 'mysql',
             'host' => $cleardb_server,
-            'port' => env('DB_PORT', '3306'),
+            'port' =>  3306,
+            // 'port' => env('DB_PORT', '3306'),
             'database' => $cleardb_db,
             'username' => $cleardb_username,
             'password' => $cleardb_password,
