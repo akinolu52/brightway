@@ -70,13 +70,14 @@ class UserController extends Controller
         }
 
         $user->trackid =  date("Ymd") - date("is");
-        $user->status = "request";
+        $user->status = "Processing goods.";
         $user->amount = $amount;
 
         $user->save();
         $message = '';
         if ($user->save()){
-            $message = "Check Your Mail to get Tracking ID";
+            $message = "Requesting";
+            // $message = "Check Your Mail to get Tracking ID";
         }
 
         // Send Mail
@@ -87,7 +88,7 @@ class UserController extends Controller
         //     $message->to( $data['email'] )->from( $data['from'], $data['name'] )->subject( 'Your Tracking ID' );
         // });
 
-        return view('main.home',['message' => "Check Your Mail to get Tracking ID" ]);
+        return view('main.home',['message' => $message ]);
     }
 
     public function track(Request $request)
