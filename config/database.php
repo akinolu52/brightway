@@ -1,11 +1,7 @@
 <?php
-$cleardb_url      = parse_url("mysql://b3f112a06eea4b:f0dbfd2b@us-cdbr-iron-east-01.cleardb.net/heroku_bc3714117f3278b?reconnect=true");
-$cleardb_server   = $cleardb_url["host"];
-$cleardb_username = $cleardb_url["user"];
-$cleardb_password = $cleardb_url["pass"];
-$cleardb_db       = substr($cleardb_url["path"],1);
 
 return [
+
     'default' => env('DB_CONNECTION', 'mysql'),
 
     'connections' => [
@@ -18,12 +14,11 @@ return [
 
         'mysql' => [
             'driver' => 'mysql',
-            'host' => $cleardb_server,
-            'port' =>  3306,
-            // 'port' => env('DB_PORT', '3306'),
-            'database' => $cleardb_db,
-            'username' => $cleardb_username,
-            'password' => $cleardb_password,
+            'host' => env('DB_HOST', '127.0.0.1'),
+            'port' => env('DB_PORT', '3306'),
+            'database' => env('DB_DATABASE', 'forge'),
+            'username' => env('DB_USERNAME', 'forge'),
+            'password' => env('DB_PASSWORD', ''),
             'unix_socket' => env('DB_SOCKET', ''),
             'charset' => 'utf8mb4',
             'collation' => 'utf8mb4_unicode_ci',

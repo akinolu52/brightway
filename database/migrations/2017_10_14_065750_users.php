@@ -18,7 +18,7 @@ class Users extends Migration
             $table->string('firstname');
             $table->string('lastname');
             $table->string('email')->unique();
-            $table->integer('number');
+            $table->varchar('number');
             $table->string('quantity');
             $table->string('from');
             $table->string('from_address');
