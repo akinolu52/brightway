@@ -63,9 +63,9 @@
 							<li><a href="/">Home</a></li>
 							<li><a href="/about">about us</a></li>
 							<li><a href="/services">Services</a></li>
-							<!-- <li><a href="/gallery">gallery</a></li> -->
 							<li><a href="/pricing">pricing</a></li>
 							<li><a href="/contact">Contact</a></li>
+							<li><a href="/track">Track</a></li> 
 						</ul>
 					</div>
 				</div>
@@ -1029,42 +1029,42 @@
 			<div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
 				<div class="skill_section">
 					<h4>trustable</h4>
-					<p>Nam cursus imperdiet elit. Fusce sollicitudin eget nulla in condime.</p>
+					<p>You can trust our services. we have clientel in over 24 countries</p>
 					<span><i class="fa fa-handshake-o" aria-hidden="true"></i></span>
 				</div>
 			</div>
 			<div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
 				<div class="skill_section">
 					<h4>support 24x7</h4>
-					<p>Nam cursus imperdiet elit. Fusce sollicitudin eget nulla in condime.</p>
+					<p>we provide 24 hours support service to our clients.</p>
 					<span><i class="fa fa-users" aria-hidden="true"></i></span>
 				</div>
 			</div>
 			<div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
 				<div class="skill_section">
 					<h4>rewards</h4>
-					<p>Nam cursus imperdiet elit. Fusce sollicitudin eget nulla in condime.</p>
+					<p>We have reward system for our clients.</p>
 					<span><i class="fa fa-gift" aria-hidden="true"></i></span>
 				</div>
 			</div>
 			<div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
 				<div class="skill_section">
 					<h4>satisfied cost</h4>
-					<p>Nam cursus imperdiet elit. Fusce sollicitudin eget nulla in condime.</p>
+					<p>Our services are cheap and affordable.</p>
 					<span><i class="fa fa-money" aria-hidden="true"></i></span>
 				</div>
 			</div>
 			<div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
 				<div class="skill_section">
 					<h4>user friendly</h4>
-					<p>Nam cursus imperdiet elit. Fusce sollicitudin eget nulla in condime.</p>
+					<p>We provide a friendly interface for users.</p>
 					<span><i class="fa fa-child" aria-hidden="true"></i></span>
 				</div>
 			</div>
 			<div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
 				<div class="skill_section">
 					<h4>discounts</h4>
-					<p>Nam cursus imperdiet elit. Fusce sollicitudin eget nulla in condime.</p>
+					<p>Price come with discount, why dont you try us.</p>
 					<span><i class="fa fa-tags" aria-hidden="true"></i></span>
 				</div>
 			</div>

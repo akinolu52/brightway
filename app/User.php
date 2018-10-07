@@ -14,6 +14,7 @@ class User extends Model
      */
     protected $fillable = [
         'firstname','lastname' ,'email', 'number' , 'quantity' ,'from' , 'to' ,
+        'item_name', 'reciever_name', 'next_of_kin', 'delivery_option', 'delivery_date', 'comment', 'weight',
     ];
 
 }

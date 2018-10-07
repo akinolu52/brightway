@@ -44,7 +44,7 @@ Route::post('/signIn', 'AdminController@signIn');
 
 Route::post('/user' , 'UserController@user');
 
-Route::post('/track' , 'UserController@track');
+Route::any('/track' , 'UserController@track');
 
 Route::post('/register', 'AdminController@signUp');
 Route::post('/logout', 'AdminController@logout');

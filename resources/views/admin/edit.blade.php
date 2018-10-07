@@ -37,6 +37,48 @@
                                <form action="{{ url('/admin/update/'.$user->id) }}" method="post">
                                   {{ csrf_field() }}
                                 <div class="form-group align-items-center">
+                                    <label for="" class=" semi-loud-text m-0">Item Name</label>
+                                    <div class="">
+                                        <input type="text" class="form-control form-control-nbr"  name="item_name" value="{{$user->item_name}}">
+                                    </div>
+                                </div>
+                                <div class="form-group align-items-center">
+                                    <label for="" class=" semi-loud-text m-0">Reciever Name</label>
+                                    <div class="">
+                                        <input type="text" class="form-control form-control-nbr"  name="reciever_name" value="{{$user->reciever_name}}">
+                                    </div>
+                                </div>
+                                <div class="form-group align-items-center">
+                                    <label for="" class=" semi-loud-text m-0">Reciever Next of kin</label>
+                                    <div class="">
+                                        <input type="text" class="form-control form-control-nbr"  name="next_of_kin" value="{{$user->next_of_kin}}">
+                                    </div>
+                                </div>
+                                <div class="form-group align-items-center">
+                                    <label for="" class=" semi-loud-text m-0">Delivery options</label>
+                                    <div class="">
+                                        <input type="text" class="form-control form-control-nbr"  name="delivery_option" value="{{$user->delivery_option}}">
+                                    </div>
+                                </div>
+                                <div class="form-group align-items-center">
+                                    <label for="" class=" semi-loud-text m-0">Delivery Date</label>
+                                    <div class="">
+                                        <input type="date" class="form-control form-control-nbr"  name="delivery_date" value="{{$user->delivery_date}}">
+                                    </div>
+                                </div>
+                                <div class="form-group align-items-center">
+                                    <label for="" class=" semi-loud-text m-0">Weight</label>
+                                    <div class="">
+                                        <input type="text" class="form-control form-control-nbr"  name="weight" value="{{$user->weight}}">
+                                    </div>
+                                </div>
+                                <div class="form-group align-items-center">
+                                    <label for="" class=" semi-loud-text m-0">Comment</label>
+                                    <div class="">
+                                        <input type="text" class="form-control form-control-nbr"  name="comment" value="{{$user->comment}}">
+                                    </div>
+                                </div>
+                                <div class="form-group align-items-center">
                                     <label for="" class=" semi-loud-text m-0">Update Status</label>
                                     <div class="">
                                         <input type="text" class="form-control form-control-nbr"  name="status" value="{{$user->status}}">
@@ -44,7 +86,7 @@
                                 </div>
                                 <div class="form-group align-items-center">
                                     <div class="">
-                                        <input type="submit" class="form-control form-control-nbr"  value="Edit">
+                                        <input type="submit" class="form-control form-control-nbr btn-primary"  value="Edit">
                                     </div>
                                 </div>
                             </div>

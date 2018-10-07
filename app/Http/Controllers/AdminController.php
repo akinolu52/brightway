@@ -54,8 +54,17 @@ class AdminController extends Controller
         return view('admin.edit', compact('user'));
     }
     public function update(Request $request , $id){
-
-        User::where('id', $id)->update(array('status' => $request['status']));
+        
+        User::where('id', $id)->update(array(
+            'status' => $request['status'],
+            "item_name" => $request["item_name"],
+            "reciever_name" => $request["reciever_name"],
+            "next_of_kin" => $request["next_of_kin"],
+            "delivery_option" => $request["delivery_option"],
+            "delivery_date" => $request["delivery_date"],
+            "weight" => $request["weight"],
+            "comment" => $request["comment"],
+        ));
 
         return redirect()->route('admin.index');
     }

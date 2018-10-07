@@ -93,10 +93,14 @@ class UserController extends Controller
 
     public function track(Request $request)
     {
-        $track = User::where('trackid', '=', $request['trackid'])->first();
-        $status = $track->status;
+        $data['status'] = '';
+        $data['track'] = null;
+        if($request->trackid){
+            $data['track'] = $track = User::where('trackid', '=', $request['trackid'])->first();
+            $data['status'] = $track->status;
+        }
         
-        return view('main.home',['status' => $status]);
+        return view('main.tracking', $data);
     }
 
 }

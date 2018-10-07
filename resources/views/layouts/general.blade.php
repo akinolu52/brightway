@@ -65,6 +65,7 @@
 							<li><a href="/services">Services</a></li>
 							<li><a href="/pricing">pricing</a></li>
 							<li><a href="/contact">Contact</a></li>
+							<li><a href="/track">track</a></li> 
 						</ul>
 					</div>
 				</div>
