@@ -18,7 +18,7 @@ class Users extends Migration
             $table->string('firstname');
             $table->string('lastname');
             $table->string('email')->unique();
-            $table->varchar('number');
+            $table->string('number');
             $table->string('quantity');
             $table->string('from');
             $table->string('from_address');
@@ -27,6 +27,15 @@ class Users extends Migration
             $table->integer('trackid');
             $table->string('status');
             $table->string('amount');
+
+            $table->string('item_name')->nullable();
+            $table->string('reciever_name')->nullable();
+            $table->string('next_of_kin')->nullable();
+            $table->string('delivery_option')->nullable();
+            $table->string('delivery_date')->nullable();
+            $table->string('comment')->nullable();
+            $table->string('weight')->nullable();
+            // $table->string('')->nullable();
             $table->timestamps();
         });
     }

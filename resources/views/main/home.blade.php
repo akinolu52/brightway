@@ -1074,7 +1074,7 @@
 <!--skill section end -->
 <!-- calculate price start -->
 <?php 
-   $locations = array( 'Lagos Island', 'Ikoyi', 'Obalende', 'Dolphin Estate', 'Osborne Park View', 'Victoria Island', 'Banana Island', 'Marina', 'Oniru', 'Lekki Phase 1' , '3rd Roundabout', 'Osapa London', 'Alpha Beach', 'Chisco', 'Agungi Femi', 'Chevron', 'VGC', 'Ajah', 'Lekki Phase 2', 'Abraham Adesanya', 'Badore' , 'Apapa', 'Ijora', 'Iganmu', 'Costain', 'Ojuelegba', 'Surulere', 'Mushin', 'Shomolu', 'Yaba', 'Onipanu', 'Palmgrove', 'Obanikoro', 'Iyanaoworo', 'Bariga' , 'Anthony', 'Gbagada', 'Ajao Estate', 'Mushin', 'Isolo', 'Oshodi', 'Olodi-Apapa', 'MMA1', 'Mm2', 'Maryland', 'Ikeja' , 'Ojota', 'Ketu', 'Mile 12', 'Magodo-Shangisha', 'Alausa', 'Omole Phase 1', 'Omole Phase 2', 'Magodo Phase 1', 'Ojodu Berger', 'Ogba', 'Iju-Ishaga', 'Agege', 'Orile-Agege', 'Abule-Egba', 'Egbeda', 'Ikotun', 'Idimu', 'Igando', 'Ipaja', 'Gowon Estate', 'Igando', 'Ifako', 'Alimosho' , 'Mile 2', 'Amuwo-Odofin', 'Festac', 'Satelite Town', 'Navy Town', 'Alaba', 'LASU', 'Okomaiko', 'Volkswagen', 'Trade-Fair', 'Ojo', 'Iba');
+   $locations = array("Italy", "Spain", "Germany", "Mexico", "Australia", "Jordan", "Andorra", "Brazil", "Paraguay", "China", "Malawi", "Slovakia", "Canada", "Wales", "France", "India", "Argentina", "U.A.E", "Ecuador", "Finland", "Ukraine");
 ?>
 @if(!isset($message))
 <div class="ed_form_box ed_toppadder90 ed_bottompadder60">
@@ -1130,7 +1130,6 @@
                             </select>
                         </div>
                         <div class="form-group align-items-center">
-                            <!-- <option value="" disabled selected>What area are you delivering to</option> -->
                             <textarea type="text" cols="30" rows="5" class="form-control" name="to_address" placeholder="To Address" required></textarea>
                         </div>
                         <div class="form-group align-items-center">
