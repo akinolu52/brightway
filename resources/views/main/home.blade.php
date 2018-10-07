@@ -1074,7 +1074,27 @@
 <!--skill section end -->
 <!-- calculate price start -->
 <?php 
-   $locations = array("Italy", "Spain", "Germany", "Mexico", "Australia", "Jordan", "Andorra", "Brazil", "Paraguay", "China", "Malawi", "Slovakia", "Canada", "Wales", "France", "India", "Argentina", "U.A.E", "Ecuador", "Finland", "Ukraine");
+   $locations = array(
+	'Afghanistan','Algeria','Andorra','Argentina','Armenia','Aruba','Australia','Austria','Azerbaijan','Bahrain','Bangladesh','Belarus','Belgium','Bolivia','Bosnia & Herzegovina','Brazil','Bulgaria','Cambodia','Cameroon','Canada','Chile','China','Colombia','Costa Rica',
+	"Cote d'Ivoire",
+	'Croatia','Cuba','Cyprus','Czech Republic','Denmark','Dominican Republic','Ecuador' ,
+	'Egypt','Estonia','Ethiopia','Finland' ,
+	'France' , 
+	'Gabon','Georgia','Germany','Ghana' ,
+	'Greece','Haiti','Honduras','Hong Kong','Hungary','Iceland','India','Indonesia' ,
+	'Iran','Ireland',
+	'Israel','Italy','Jamaica','Japan','Jordan','Kazakhstan','Kenya','Korea, North','Korea, South','Kuwait','Kyrgyzstan','Latvia','Lebanon','Liechtenstein','Lithuania','Luxembourg','Macedonia','Madagascar','Malaysia' ,
+	'Mali','Malta','Mexico','Moldova','Morocco','Namibia','Netherlands' ,
+	'New Zealand','Nigeria' ,
+	'Norway','Oman','Pakistan','Panama','Paraguay','Peru','Philippines' ,
+	'Poland','Portugal','Qatar' ,
+	'Romania','Russia','San Marino' ,
+	'Sao Tome & Principe','Saudi Arabia' ,
+	'Senegal','Serbia' ,
+	'Singapore','Slovakia' ,
+	'Slovenia','South Africa','Spain','Sri Lanka','Sweden','Switzerland','Syria','Taiwan','Tanzania','Thailand','Trinidad & Tobago' ,
+	'Tunisia','Turkey','Uganda','Ukraine','United Arab Emirates','United Kingdom','United States','Uruguay','Uzbekistan','Venezuela','Vietnam','Virgin Islands','West Bank','Western Sahara','Yemen','Zambia'
+   );
 ?>
 @if(!isset($message))
 <div class="ed_form_box ed_toppadder90 ed_bottompadder60">

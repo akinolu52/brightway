@@ -35,7 +35,6 @@ class Users extends Migration
             $table->string('delivery_date')->nullable();
             $table->string('comment')->nullable();
             $table->string('weight')->nullable();
-            // $table->string('')->nullable();
             $table->timestamps();
         });
     }
